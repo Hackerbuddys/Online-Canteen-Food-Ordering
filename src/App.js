@@ -1,7 +1,13 @@
-import "./App.css";
+import React from "react";
+import "./assets/CSS/style.css";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <div className="App">This is Restaurant Website On reactjs</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
