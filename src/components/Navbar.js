@@ -19,6 +19,12 @@ function Navbar() {
         </nav>
         <div className="icons">
           <div className="fas fa-search"></div>
+          <div className="fas fa-shopping-cart"></div>
+          <div className="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <div className="search-form">
+          <input type="search" placeholder="Search here..." id="search-box" />
+          <label htmlFor="search-box" className="fas fa-search"></label>
         </div>
       </header>
     </>
