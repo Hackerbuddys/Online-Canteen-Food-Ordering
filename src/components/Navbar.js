@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import Logo from "../assets/images/logo.png";
 import { cart } from "../Data";
 
-function Navbar() {
+const Navbar = () => {
+  const cartRef = useRef(null);
+  const searchRef = useRef(null);
+  const navbarRef = useRef(null);
+
+  const cartHandler = () => {
+    cartRef.current.classList.toggle("active");
+    searchRef.current.classList.remove("active");
+    navbarRef.current.classList.remove("active");
+  };
+
+  const searchHandler = () => {
+    searchRef.current.classList.toggle("active");
+    cartRef.current.classList.remove("active");
+    navbarRef.current.classList.remove("active");
+  };
+
+  const navbarHandler = () => {
+    navbarRef.current.classList.toggle("active");
+    cartRef.current.classList.remove("active");
+    searchRef.current.classList.remove("active");
+  };
+
   return (
     <>
       <header className="header">
         <a href="#" className="logo">
           <img src={Logo} alt="" />
         </a>
-        <nav className="navbar">
+        <nav className="navbar" ref={navbarRef}>
           <a href="#home">home</a>
           <a href="#about">about</a>
           <a href="#menu">menu</a>
@@ -19,15 +41,19 @@ function Navbar() {
           <a href="#blogs">blogs</a>
         </nav>
         <div className="icons">
-          <div className="fas fa-search"></div>
-          <div className="fas fa-shopping-cart"></div>
-          <div className="fas fa-bars" id="menu-btn"></div>
+          <div className="fas fa-search" onClick={searchHandler}></div>
+          <div className="fas fa-shopping-cart" onClick={cartHandler}></div>
+          <div
+            className="fas fa-bars"
+            id="menu-btn"
+            onClick={navbarHandler}
+          ></div>
         </div>
-        <div className="search-form">
+        <div className="search-form" ref={searchRef}>
           <input type="search" placeholder="Search here..." id="search-box" />
           <label htmlFor="search-box" className="fas fa-search"></label>
         </div>
-        <div className="cart-items-container">
+        <div className="cart-items-container" ref={cartRef}>
           {cart.map((item, index) => (
             <div className="cart-item">
               <span className="fas fa-times" key={index}></span>
@@ -39,12 +65,12 @@ function Navbar() {
             </div>
           ))}
           <a href="#" className="btn">
-            Checkout Now /
+            Checkout Now
           </a>
         </div>
       </header>
     </>
   );
-}
+};
 
 export default Navbar;
