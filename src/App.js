@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Product from "./components/Product";
+import Review from "./components/Review"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Menu />
       <Product />
+      <Review />
     </>
   );
 }
