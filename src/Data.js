@@ -154,15 +154,15 @@ const review = [
 const blog = [
   {
     img: blogImage1,
-    title: "The Ultimate Guide to Sushi Restaurants in Tokyo",
+    // title: "The Ultimate Guide to Sushi Restaurants in Tokyo",
   },
   {
     img: blogImage2,
-    title: "How to Make the Perfect Mac and Cheese at Home",
+    // title: "How to Make the Perfect Mac and Cheese at Home",
   },
   {
     img: blogImage3,
-    title: "Why You Should Always Wear a Jacket When Going for a Run",
+    // title: "Why You Should Always Wear a Jacket When Going for a Run",
   },
 ];
 export { menu, cart, product, review, blog };
