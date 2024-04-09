@@ -134,23 +134,35 @@ const product = [
 const review = [
   {
     img: reviewImage1,
+    // name: "John Doe",
+    // designation: "Customer",
+    // rating: 5,
   },
   {
     img: reviewImage2,
+    // name: "Jane Smith",
+    // designation: "Manager",
+    // rating: 4,
   },
   {
     img: reviewImage3,
+    // name: "Mark Johnson",
+    // designation: "CEO",
+    // rating: 4,
   },
 ];
 const blog = [
   {
     img: blogImage1,
+    title: "The Ultimate Guide to Sushi Restaurants in Tokyo",
   },
   {
     img: blogImage2,
+    title: "How to Make the Perfect Mac and Cheese at Home",
   },
   {
     img: blogImage3,
+    title: "Why You Should Always Wear a Jacket When Going for a Run",
   },
 ];
 export { menu, cart, product, review, blog };
