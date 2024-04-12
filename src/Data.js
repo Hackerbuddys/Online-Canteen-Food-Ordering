@@ -106,7 +106,7 @@ const cart = [
   },
   {
     img: cartImage2,
-    name: "Aloo Tika",
+    name: "Aloo Tikka",
     price: "$10.99/pc",
   },
   {
