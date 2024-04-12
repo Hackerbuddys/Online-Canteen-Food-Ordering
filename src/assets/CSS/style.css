@@ -240,39 +240,42 @@ section {
   }
 }
 
-.home{
+/*****************************HOME***************************/
+
+.home {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)), url(../images/home-img.png)no-repeat;
+  background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)),
+    url(../images/home-img.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.home .content{
+.home .content {
   max-width: 60rem;
 }
 
-.home span{
+.home span {
   color: #ffc107;
   text-transform: uppercase;
 }
 
-.home .content h3{
+.home .content h3 {
   font-size: 6rem;
   text-transform: uppercase;
   color: #fff;
 }
 
-.home .content p{
-  font-size: 2 rem;
+.home .content p {
+  font-size: 2rem;
   font-weight: lighter;
   line-height: 1.8;
   padding: 1rem 0;
   color: #eee;
 }
 
-  /* -----------------About--------------- */
+/* -----------------About--------------- */
 
 .about .row {
   display: flex;
@@ -306,77 +309,76 @@ section {
   line-height: 1.8;
 }
 
-.about .row .content p{
+.about .row .content p {
   font-size: 1.6rem;
   color: #ccc;
   padding: 1rem 0;
   line-height: 1.8;
 }
-  /* -----------------Menu--------------- */
+/* -----------------Menu--------------- */
 
-  .heading{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-  }
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
 
-  .heading span {
-    color: #ffc107;
-    text-transform: uppercase;
-  }
+.heading span {
+  color: #ffc107;
+  text-transform: uppercase;
+}
 
-  .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-  }
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
 
-  .menu .box-container .box {
-    padding: 5rem;
-    text-align: center;
-    border: 0.2rem solid #ffc107;
-  }
-  
-  .menu .box-container .box img {
-    height: 10rem;
-    border-radius: 50%;
-  }
+.menu .box-container .box {
+  padding: 5rem;
+  text-align: center;
+  border: 0.2rem solid #ffc107;
+}
 
-  .menu .box-container .box h3 {
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 0;
-  }
-  
-  .menu .box-container .box .price {
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 0.5rem 0;
-  }
-  
-  .menu .box-container .box .price span {
-    font-size: 1.5rem;
-    text-decoration: line-through;
-    font-weight: lighter;
-  }
+.menu .box-container .box img {
+  height: 10rem;
+  border-radius: 50%;
+}
 
-  .menu .box-container .box:hover {
-    background: #443300;
-    transition: 0.5s;
-  }
+.menu .box-container .box h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
 
-  
-  /* -----------------Product--------------- */
+.menu .box-container .box .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
 
-.products .box-container .box{
+.menu .box-container .box .price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+  background: #443300;
+  transition: 0.5s;
+}
+
+/* -----------------Product--------------- */
+
+.products .box-container .box {
   text-align: center;
   border: 0.2rem solid #ffc107;
   padding: 2rem;
 }
 
-.products .box-container.box .icons a{
+.products .box-container.box .icons a {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
@@ -423,9 +425,9 @@ section {
   font-size: 1.5rem;
 }
 
- /* -----------------Review--------------- */
+/* -----------------Review--------------- */
 
- .review .box-container .box {
+.review .box-container .box {
   border: 0.2rem solid #ffc107;
   text-align: center;
   padding: 3rem 2rem;
@@ -456,5 +458,4 @@ section {
   color: #ffc107;
 }
 
- /* -----------------Contact Us--------------- */
- 
+/* -----------------Contact Us--------------- */
