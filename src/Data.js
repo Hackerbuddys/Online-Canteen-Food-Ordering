@@ -26,129 +26,139 @@ import blogImage3 from "./assets/images/blog-3.jpeg";
 const menu = [
   {
     img: menuImage1,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Meal Burgar",
+    discount: "15% OFF",
+    price: "$15.99",
   },
   {
     img: menuImage2,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Egg Half-fry",
+    discount: "10% OFF",
+    price: "$9.50",
   },
   {
     img: menuImage3,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Chicken Lolipop",
+    discount: "12% OFF",
+    price: "$10.99",
   },
   {
     img: menuImage4,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Spaciy Pizza",
+    discount: "11% OFF",
+    price: "$8.99",
   },
   {
     img: menuImage5,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Paneer Tikka",
+    discount: "14% OFF",
+    price: "$12.99",
   },
   {
     img: menuImage6,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Black Tea",
+    discount: "10% OFF",
+    price: "$5.00",
   },
   {
     img: menuImage7,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "chinse Noodles",
+    discount: "20% OFF",
+    price: "$10.99",
   },
   {
     img: menuImage8,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Mix Frappe",
+    discount: "25% OFF",
+    price: "$15.99",
   },
-   {
+  {
     img: menuImage9,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Momo",
+    discount: "15% OFF",
+    price: "$10.00",
   },
   {
     img: menuImage10,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Samosa",
+    discount: "12% OFF",
+    price: "$6.50",
   },
   {
     img: menuImage11,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Pav Bhaji",
+    discount: "25% OFF",
+    price: "$10.50",
   },
   {
     img: menuImage12,
-      // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Korean Spice Fish Fry",
+    discount: "50% OFF",
+    price: "$10.10",
   },
-
 ];
 
 const cart = [
   {
     img: cartImage1,
-    // name: 'Chicken Burger',
-    // qty: 3,
-    // price: '$6.50/pc'
+    name: "Chicken Burger",
+    price: "$15.50/pc",
   },
   {
     img: cartImage2,
-    // name: 'Chicken Burger',
-    // qty: 3,
-    // price: '$6.50/pc'
+    name: "Aloo Tika",
+    price: "$10.99/pc",
   },
   {
     img: cartImage3,
-    // name: 'Chicken Burger',
-    // qty: 3,
-    // price: '$6.50/pc'
+    name: "French Frise",
+    price: "$12.50/pc",
   },
   {
     img: cartImage4,
-    // name: 'Chicken Burger',
-    // qty: 3,
-    // price: '$6.50/pc'
+    name: "Plates Meal",
+    price: "$20.99/pc",
   },
 ];
 
 const product = [
   {
     img: productImage1,
-    // name: "Burgar",
-    // price: "$9.10/-",
+    name: "Solo Burger",
+    discount: "50% OFF",
+    price: "$12.50",
   },
   {
     img: productImage2,
-    // name: "Combo Ice Cream",
-    // price: "$9.10/-",
+    name: "Ice-cream",
+    discount: "50% OFF",
+    price: "$15.99",
   },
   {
     img: productImage3,
-    // name: "Fresh Ice Cream",
-    // price: "$9.10/-",
+    name: "Coco-cream",
+    discount: "50% OFF",
+    price: "$10.00",
   },
 ];
 const review = [
   {
     img: reviewImage1,
-    // name: "John Doe",
-    // designation: "Customer",
-    // rating: 5,
+    name: "Lily Jams",
+    comment:
+      "A hidden gem! I stumbled upon this restaurant while exploring the neighborhood, and I'm so glad I did. The food was absolutely delicious, with fresh ingredients and unique flavors. The ambiance was cozy and inviting, perfect for a relaxed dining experience. The staff was friendly and attentive, making sure we had everything we needed. I'll definitely be coming back!",
   },
   {
     img: reviewImage2,
-    // name: "Jane Smith",
-    // designation: "Manager",
-    // rating: 4,
+    name: "Jane Smith",
+    comment:
+      "Had a wonderful dinner experience here with my family. The menu had a great variety of options to choose from, catering to everyone's tastes. We tried a few different dishes, and each one was bursting with flavor. The presentation was also top-notch, making the dining experience even more enjoyable. The staff was accommodating and provided excellent service throughout our meal. Highly recommend!",
   },
   {
     img: reviewImage3,
-    // name: "Mark Johnson",
-    // designation: "CEO",
-    // rating: 4,
+    name: "Fatima Johnson",
+    comment:
+      "Absolutely fantastic food and service! I've been a regular customer here for years, and the quality never disappoints. Whether it's breakfast, lunch, or dinner, every dish is cooked to perfection. The chefs truly know their craft, and it shows in every bite. The staff is like family, always welcoming and attentive. If you're looking for a memorable dining experience, look no further than this restaurant.",
   },
 ];
 const blog = [

@@ -59,8 +59,8 @@ const Navbar = () => {
               <span className="fas fa-times" key={index}></span>
               <img src={item.img} alt="" />
               <div className="content">
-                <h3>cart item 01</h3>
-                <div className="price">$15.10/-</div>
+                <h3>{item.name}</h3>
+                <div className="price">{item.price}</div>
               </div>
             </div>
           ))}
