@@ -80,7 +80,7 @@ const menu = [
   },
   {
     img: menuImage10,
-    name: "Samosa",
+    name: "Samosa With Tea",
     discount: "12% OFF",
     price: "$6.50",
   },
