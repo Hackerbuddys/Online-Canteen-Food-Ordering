@@ -5,7 +5,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Product from "./components/Product";
-import Review from "./components/Review"
+import Review from "./components/Review";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Menu />
       <Product />
       <Review />
+      <Contact />
     </>
   );
 }
