@@ -168,15 +168,21 @@ const review = [
 const blog = [
   {
     img: blogImage1,
-    // title: "The Ultimate Guide to Sushi Restaurants in Tokyo",
+    title: "A cheeseburger and french fries",
+    date: "May 1st, 2024",
+    desc:  "French fries are long, thin strips of potato that are deep-fried. They are a popular fast food side dish and can be served plain or with a variety of toppings, such as ketchup, salt, vinegar, or cheese.",
   },
   {
     img: blogImage2,
-    // title: "How to Make the Perfect Mac and Cheese at Home",
+    title: "A grilled cheese sandwich ",
+    date: "May 1st, 2024",
+    desc:  "Melted cheese is a key component of a grilled cheese sandwich. In the image, it appears to be a yellow cheese, possibly cheddar or Monterey Jack. Lean protein that adds heartiness to the sandwich.",
   },
   {
     img: blogImage3,
-    // title: "Why You Should Always Wear a Jacket When Going for a Run",
+    title: "A blueberries and lemon slices",
+    date: "May 1st, 2024",
+    desc:  "In a saucepan, combine the sugar and 1 cup of water. Heat over medium heat, stirring constantly, until the sugar dissolves. Bring to a boil, then remove from the heat and let cool completely.",
   },
 ];
 export { menu, cart, product, review, blog };

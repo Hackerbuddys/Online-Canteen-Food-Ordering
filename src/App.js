@@ -7,6 +7,7 @@ import Menu from "./components/Menu";
 import Product from "./components/Product";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Product />
       <Review />
       <Contact />
+      <Blog />
     </>
   );
 }
