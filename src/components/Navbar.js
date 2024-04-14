@@ -62,6 +62,11 @@ const Navbar = () => {
                 <h3>{item.name}</h3>
                 <div className="price">{item.price}</div>
               </div>
+              {/* <div className="quantity">
+                <a href="#" className="btn">+</a> 
+                <div>{item.count}</div>
+                <a href="#" className="btn">-</a>
+             </div> */}
             </div>
           ))}
           <a href="#" className="btn">

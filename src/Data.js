@@ -103,21 +103,25 @@ const cart = [
     img: cartImage1,
     name: "Chicken Burger",
     price: "$15.50/pc",
+    // count : "3"
   },
   {
     img: cartImage2,
     name: "Aloo Tikka",
     price: "$10.99/pc",
+    // count : "2"
   },
   {
     img: cartImage3,
     name: "French Frise",
     price: "$12.50/pc",
+    // count : "1"
   },
   {
     img: cartImage4,
     name: "Plates Meal",
     price: "$20.99/pc",
+    count : "5"
   },
 ];
 
