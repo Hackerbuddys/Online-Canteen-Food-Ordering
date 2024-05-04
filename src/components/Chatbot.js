@@ -10,6 +10,13 @@ const buttons = [
 ];
 
 export class Chatbot extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOrdering: false, // Initialize the state variable
+    };
+  }
+
   componentDidMount() {
     addResponseMessage("Welcome to our restaurant!");
     setQuickButtons(buttons);
@@ -28,6 +35,9 @@ export class Chatbot extends Component {
     } else if (message.includes("order")) {
       // Handle order food
       this.handleOrderFood();
+    } else if (this.state.isOrdering) {
+      // Check if user is ordering food
+      this.handleOrderConfirmation(newMessage); // Handle order confirmation
     } else {
       addResponseMessage(
         "I'm sorry, I didn't understand that. How can I help you today?"
@@ -55,8 +65,17 @@ export class Chatbot extends Component {
   };
 
   handleOrderFood = () => {
+    this.setState({ isOrdering: true }); // Set flag to indicate ordering food
     addResponseMessage("Sure! What would you like to order?");
     setQuickButtons([]); // Clear quick buttons for ordering
+  };
+
+  handleOrderConfirmation = (foodName) => {
+    addResponseMessage(
+      `Thank you for ordering ${foodName}! Your order has been placed.`
+    );
+    setQuickButtons(buttons); // Set quick buttons back
+    this.setState({ isOrdering: false }); // Reset ordering flag
   };
 
   handleQuickButtonClicked = (data) => {
