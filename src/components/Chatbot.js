@@ -6,6 +6,7 @@ const buttons = [
   { label: "Complaint", value: "complaint" },
   { label: "Help Center", value: "help" },
   { label: "Customer Care", value: "care" },
+  { label: "Order Food", value: "order" }, // New button for ordering food
 ];
 
 export class Chatbot extends Component {
@@ -24,6 +25,9 @@ export class Chatbot extends Component {
       this.handleHelpCenter();
     } else if (message.includes("care")) {
       this.handleCustomerCare();
+    } else if (message.includes("order")) {
+      // Handle order food
+      this.handleOrderFood();
     } else {
       addResponseMessage(
         "I'm sorry, I didn't understand that. How can I help you today?"
@@ -48,6 +52,11 @@ export class Chatbot extends Component {
     const randomPhoneNumber = Math.floor(Math.random() * 10000000000);
     addResponseMessage(`For customer care, please call: ${randomPhoneNumber}`);
     setQuickButtons([]);
+  };
+
+  handleOrderFood = () => {
+    addResponseMessage("Sure! What would you like to order?");
+    setQuickButtons([]); // Clear quick buttons for ordering
   };
 
   handleQuickButtonClicked = (data) => {
