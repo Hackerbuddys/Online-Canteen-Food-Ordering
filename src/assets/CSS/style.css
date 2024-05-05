@@ -689,17 +689,6 @@ section {
     font-size: 4.5rem;
   }
 
-  /* .home .content p {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-} */
-
   .home .content p {
     font-size: 1.5rem;
   }
