@@ -679,7 +679,7 @@ section {
     right: 2rem;
   }
 
-  /* .home {
+  .home {
     background-position: left;
     justify-content: center;
     text-align: center;
@@ -698,4 +698,4 @@ section {
   html {
     font-size: 50%;
   }
-} */
+}
