@@ -9,7 +9,7 @@ import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
-import { Chatbot } from "./components/Chatbot";
+// import { Chatbot } from "./components/Chatbot";
 
 function App() {
   return (
@@ -23,10 +23,10 @@ function App() {
       <Contact />
       <Blog />
       <Footer />
-      <div>
+      {/* <div>
         fffdd
         <Chatbot />
-      </div>
+      </div> */}
     </>
   );
 }
