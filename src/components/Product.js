@@ -11,18 +11,12 @@ const Products = () => {
         <div className="box-container">
           {product.map((item, index) => (
             <div className="box" key={index * Math.random()}>
-              // Product.js
               <div className="icons">
-                <a href="/" className="fas fa-shopping-cart">
-                  Shop
-                </a>
-                <a href="/" className="fas fa-heart">
-                  Favorite
-                </a>
-                <a href="/" className="fas fa-eye">
-                  View
-                </a>
+                <a href="/" className="fas fa-shopping-cart"></a>
+                <a href="/" className="fas fa-heart"></a>
+                <a href="/" className="fas fa-eye"></a>
               </div>
+
               <div className="image">
                 <img src={item.img} alt={item.name} />
               </div>
