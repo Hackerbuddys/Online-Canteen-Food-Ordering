@@ -29,16 +29,30 @@ const Navbar = () => {
     <>
       <header className="header">
         <a href="#" className="logo">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="logo" />
         </a>
         <nav className="navbar" ref={navbarRef}>
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#menu">menu</a>
-          <a href="#products">products</a>
-          <a href="#review">review</a>
-          <a href="#contact">contact</a>
-          <a href="#blogs">blogs</a>
+          <a href="/" className="nav-link">
+            Home
+          </a>
+          <a href="#about" className="nav-link">
+            About
+          </a>
+          <a href="#menu" className="nav-link">
+            Menu
+          </a>
+          <a href="#products" className="nav-link">
+            Products
+          </a>
+          <a href="#review" className="nav-link">
+            Review
+          </a>
+          <a href="#contact" className="nav-link">
+            Contact
+          </a>
+          <a href="#blogs" className="nav-link">
+            Blogs
+          </a>
         </nav>
         <div className="icons">
           <div className="fas fa-search" onClick={searchHandler}></div>
@@ -69,7 +83,7 @@ const Navbar = () => {
              </div> */}
             </div>
           ))}
-          <a href="#" className="btn">
+          <a href="/home" className="btn">
             Checkout Now
           </a>
         </div>
