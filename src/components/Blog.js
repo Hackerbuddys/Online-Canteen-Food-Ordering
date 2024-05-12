@@ -15,16 +15,12 @@ const Blog = () => {
                 <img src={item.img} alt="" />
               </div>
               <div class="content">
-                <a href="#" class="title">
-                 {item.title}
+                <a href="/home" class="title">
+                  {item.title}
                 </a>
-                <span>by admin / {item.date }</span>
-                <p>
-                 {item.desc}
-                </p>
-                <a href="#" class="btn">
-                  read more
-                </a>
+                <span>by admin / {item.date}</span>
+                <p>{item.desc}</p>
+                <a href="/about">Read More</a>
               </div>
             </div>
           ))}

@@ -16,7 +16,7 @@ const Menu = () => {
             <div className="price">
               {item.price} <span>{item.discount}</span>
             </div>
-            <a href="#" className="btn">
+            <a href="/home" className="btn">
               add to cart
             </a>
           </div>

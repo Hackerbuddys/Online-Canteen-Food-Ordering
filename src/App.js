@@ -24,7 +24,6 @@ function App() {
       <Blog />
       <Footer />
       <div>
-        fffdd
         <Chatbot />
       </div>
     </>

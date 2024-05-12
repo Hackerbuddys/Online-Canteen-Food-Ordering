@@ -378,17 +378,17 @@ section {
   padding: 2rem;
 }
 
-.products .box-container .box .icons a {
+.products .box-container .box .icons button {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
   border: 0.2rem solid #ffc107;
-  color: #fff;
+  color: #000;
   margin: 0.3rem;
 }
 
-.products .box-container .box .icons a:hover {
+.products .box-container .box .icons button:hover {
   background: #ffc107;
 }
 
