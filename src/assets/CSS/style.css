@@ -674,7 +674,7 @@ section {
     font-size: 2rem;
   }
 
-  /* .header .search-form {
+  .header .search-form {
     width: 90%;
     right: 2rem;
   }
@@ -698,4 +698,4 @@ section {
   html {
     font-size: 50%;
   }
-} */
+}
