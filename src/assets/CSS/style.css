@@ -378,17 +378,17 @@ section {
   padding: 2rem;
 }
 
-.products .box-container .box .icons button {
+.products .box-container .box .icons a {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
   border: 0.2rem solid #ffc107;
-  color: #000;
+  color: #fff;
   margin: 0.3rem;
 }
 
-.products .box-container .box .icons button:hover {
+.products .box-container .box .icons a:hover {
   background: #ffc107;
 }
 
@@ -674,7 +674,7 @@ section {
     font-size: 2rem;
   }
 
-  .header .search-form {
+  /* .header .search-form {
     width: 90%;
     right: 2rem;
   }
@@ -698,4 +698,4 @@ section {
   html {
     font-size: 50%;
   }
-}
+} */
