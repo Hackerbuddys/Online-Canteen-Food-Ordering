@@ -30,7 +30,7 @@ const Footer = () => {
           aria-label="Pinterest"
         ></a>
       </div>
-      <div className="links">
+      {/* <div className="links">
         <a href="/home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <div className="credit">
         Created by <span>@mr._hackerbuddy</span> | All rights reserved
-      </div>
+      </div> */}
     </footer>
   );
 };
