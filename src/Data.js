@@ -44,7 +44,7 @@ const menu = [
   },
   {
     img: menuImage4,
-    name: "Spaciy Pizza",
+    name: "Spicy Pizza",
     discount: "11% OFF",
     price: "$8.99",
   },
