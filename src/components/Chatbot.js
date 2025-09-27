@@ -6,14 +6,14 @@ const buttons = [
   { label: "Complaint", value: "complaint" },
   { label: "Help Center", value: "help" },
   { label: "Customer Care", value: "care" },
-  { label: "Order Food", value: "order" }, // New button for ordering food
+  { label: "Order Food", value: "order" },
 ];
 
-export class Chatbot extends Component {
+class Chatbot extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOrdering: false, // Initialize the state variable
+      isOrdering: false,
     };
   }
 
@@ -23,22 +23,14 @@ export class Chatbot extends Component {
   }
 
   handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
     const message = newMessage.toLowerCase();
 
-    if (message.includes("complaint")) {
-      this.handleComplaint();
-    } else if (message.includes("help")) {
-      this.handleHelpCenter();
-    } else if (message.includes("care")) {
-      this.handleCustomerCare();
-    } else if (message.includes("order")) {
-      // Handle order food
-      this.handleOrderFood();
-    } else if (this.state.isOrdering) {
-      // Check if user is ordering food
-      this.handleOrderConfirmation(newMessage); // Handle order confirmation
-    } else {
+    if (message.includes("complaint")) this.handleComplaint();
+    else if (message.includes("help")) this.handleHelpCenter();
+    else if (message.includes("care")) this.handleCustomerCare();
+    else if (message.includes("order")) this.handleOrderFood();
+    else if (this.state.isOrdering) this.handleOrderConfirmation(newMessage);
+    else {
       addResponseMessage(
         "I'm sorry, I didn't understand that. How can I help you today?"
       );
@@ -65,21 +57,20 @@ export class Chatbot extends Component {
   };
 
   handleOrderFood = () => {
-    this.setState({ isOrdering: true }); // Set flag to indicate ordering food
+    this.setState({ isOrdering: true });
     addResponseMessage("Sure! What would you like to order?");
-    setQuickButtons([]); // Clear quick buttons for ordering
+    setQuickButtons([]);
   };
 
   handleOrderConfirmation = (foodName) => {
     addResponseMessage(
       `Thank you for ordering ${foodName}! Your order has been placed.`
     );
-    setQuickButtons(buttons); // Set quick buttons back
-    this.setState({ isOrdering: false }); // Reset ordering flag
+    setQuickButtons(buttons);
+    this.setState({ isOrdering: false });
   };
 
   handleQuickButtonClicked = (data) => {
-    console.log(data);
     setQuickButtons(buttons.filter((button) => button.value !== data));
     this.handleNewUserMessage(data);
   };
@@ -97,3 +88,5 @@ export class Chatbot extends Component {
     );
   }
 }
+
+export default Chatbot;
