@@ -5,7 +5,6 @@ import "./assets/CSS/style.css";
 // Main Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Chatbot from "./components/Chatbot";
 
 // Pages
 import Home from "./components/Home";
@@ -42,7 +41,6 @@ function App() {
       </Routes>
 
       <Footer />
-      <Chatbot />
     </Router>
   );
 }
